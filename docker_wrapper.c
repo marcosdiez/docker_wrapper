@@ -7,7 +7,8 @@ char *help = "usage:   docker_wrapper [-v] DOCKER_EXECUTABLE [OPTIONS] run [arg.
              "If it receives SIGTERM, it will run [DOCKER_EXECUTABLE stop CONTAINER_NAME].\n"
              "If it receives further SIGTERMs, it will run [DOCKER_EXECUTABLE kill CONTAINER_NAME].\n\n"
              "It's purpose is to be a wrapper for docker so it works as expected on supervisorctl, upstart, systemd and similar tools.\n\n"
-             "It is compiled statically so you can copy it's executable and it should work anywhere on the same plataform."
+             "It is compiled statically so you can copy it's executable and it should work anywhere.\n\n"
+             "More info at https://github.com/marcosdiez/docker_wrapper"
              ;
 
 #include <stdio.h>
